@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  background: #06141b;
+  color: #ccd0cf;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  border-left: 1px solid rgba(255,255,255,0.1);
+  border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+.title {
+    margin-bottom: 100px;
+    font-size: 150%;
+}
+
+.qaLeft {
+    text-align: left;
+    margin-right: auto;
+    
+    width: 60%;
+    margin-bottom: 120px;
+    padding: 36px;
+  
+    background: #11212d;
+    border-radius: 16px;
+}
+
+.qaRight {
+    text-align: right;
+    margin-left: auto;
+
+    width: 60%;
+    margin-bottom: 120px;
+    padding: 36px;
+  
+    background: #11212d;
+    border-radius: 16px;
+}
+
+.qaLeft h2 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    opacity: 1.2;
+    color: #ccd0cf;
+}
+.qaLeft p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #ccd0cf;
+}
+
+.qaLeft {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.qaLeft:hover {
+    transform: translateY(-5px);
+}
+
+.qaRight {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.qaRight:hover {
+    transform: translateY(-5px);
+}
