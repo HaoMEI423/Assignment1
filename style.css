@@ -1,66 +1,126 @@
+/* 
+   This section defines the overall visual tone and typography system.
+   The goal is to create a consistent dark UI experience with good readability.
+*/
 body {
   margin: 0;
+   /* remove default browser margin to avoid unwanted white space 
+     and create a clean edge-to-edge layout */
+
   background: #06141b;
+  /* dark background to create immersive and focused visual experience */
+
   color: #ccd0cf;
+  /* softer light color instead of pure white to reduce eye strain */
   font-family: 'Inter', sans-serif;
+  /* modern UI font for better readability on screen, font was find in google fonts */
 }
 
+/* 
+   This section controls the main content width and spatial structure.
+   It improves readability and creates a framed, editorial-style layout.
+*/
 .container {
   width: 100%;
+  /* limit content width to avoid overly long text lines */
   max-width: 1000px;
   margin: 0 auto;
+  /* center the layout for balanced composition */
   padding: 80px 40px;
-  border-left: 1px solid rgba(255,255,255,0.1);
-  border-right: 1px solid rgba(255,255,255,0.1);
+   /* create enough whitespace to reduce visual clutter */
+  border-left: 1px solid #ffffff1a;
+  border-right: 1px solid #ffffff1a;
+  /* subtle borders to simulate a gallery or editorial frame */
 }
 
+/* 
+   This section establishes the entry point of the page.
+   It separates the title from content and builds visual hierarchy.
+*/
 .title {
     margin-bottom: 100px;
+    /* large spacing to clearly separate from following content */
     font-size: 150%;
+    /* slightly larger size to indicate importance */
 }
 
+/* 
+   This component represents one side of the alternating layout.
+   It follows natural reading direction and acts as a primary content module.
+*/
 .qaLeft {
     text-align: left;
+    /* align text to match normal reading behaviour */
     margin-right: auto;
+    /* push block to left to create asymmetrical layout */
     
     width: 60%;
+    /* limit width for readability */
     margin-bottom: 120px;
+    /* spacing between content blocks for better readability*/
     padding: 36px;
+    /* internal spacing for comfortable reading */
   
     background: #11212d;
+    /* create visual separation from background */
     border-radius: 16px;
+    /* rounded corners for softer UI appearance */
 }
 
+/* 
+   This component creates variation by mirroring the left block.
+   It helps build visual rhythm and a more dynamic scrolling experience.
+*/
 .qaRight {
     text-align: right;
+    /* align text to right to differentiate layout */
     margin-left: auto;
+    /* push block to right side */
 
     width: 60%;
     margin-bottom: 120px;
     padding: 36px;
+    /* keep consistent width with left block */
   
     background: #11212d;
     border-radius: 16px;
+    /* maintain consistent visual style */
 }
 
+/* 
+   This section improves readability and text hierarchy inside each module.
+*/
 .qaLeft h2 {
-    font-size: 1.4rem;
     margin-bottom: 12px;
-    opacity: 1.2;
     color: #ccd0cf;
 }
 .qaLeft p {
-    font-size: 1rem;
     line-height: 1.7;
+    /* higher line-height improves reading comfort */
+    color: #ccd0cf;
+}
+.qaRight h2 {
+    margin-bottom: 12px;
+    color: #ccd0cf;
+}
+.qaRight p {
+    line-height: 1.7;
+    /* higher line-height improves reading comfort */
     color: #ccd0cf;
 }
 
+/* 
+   This section adds interaction feedback to improve user experience.
+   Small motion makes the interface feel more responsive and alive.
+*/
 .qaLeft {
     transition: transform 0.3s ease, opacity 0.3s ease;
+    /* smooth transition for better interaction quality */
 }
 
 .qaLeft:hover {
     transform: translateY(-5px);
+    /* subtle upward movement to indicate interactivity */
 }
 
 .qaRight {
